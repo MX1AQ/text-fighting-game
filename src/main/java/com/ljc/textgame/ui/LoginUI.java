@@ -1,9 +1,9 @@
-package ui;
+package com.ljc.textgame.ui;
 
-import domain.User;
-import service.LoginResult;
-import service.UserService;
-import service.ValidationResult;
+import com.ljc.textgame.domain.User;
+import com.ljc.textgame.service.LoginResult;
+import com.ljc.textgame.service.UserService;
+import com.ljc.textgame.service.ValidationResult;
 
 import java.util.Scanner;
 
@@ -21,7 +21,6 @@ public class LoginUI {
         while (true) {
             showMenu();
             int choice = readInt();
-            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -116,11 +115,18 @@ public class LoginUI {
     }
 
     private int readInt() {
-        while (!scanner.hasNextInt()) {
-            System.out.println("请输入数字选项。");
-            scanner.nextLine();
-            System.out.print("请选择操作：");
+        while (true) {
+            if (!scanner.hasNextLine()) {
+                return 3;
+            }
+
+            String input = scanner.nextLine();
+            try {
+                return Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("请输入数字选项。");
+                System.out.print("请选择操作：");
+            }
         }
-        return scanner.nextInt();
     }
 }

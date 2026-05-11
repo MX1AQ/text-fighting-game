@@ -1,7 +1,7 @@
-package service;
+package com.ljc.textgame.service;
 
-import domain.User;
-import repository.UserRepository;
+import com.ljc.textgame.domain.User;
+import com.ljc.textgame.repository.UserRepository;
 
 import java.util.Random;
 

@@ -1,6 +1,8 @@
-import repository.UserRepository;
-import service.UserService;
-import ui.LoginUI;
+package com.ljc.textgame;
+
+import com.ljc.textgame.repository.UserRepository;
+import com.ljc.textgame.service.UserService;
+import com.ljc.textgame.ui.LoginUI;
 
 public class App {
     public static void main(String[] args) {

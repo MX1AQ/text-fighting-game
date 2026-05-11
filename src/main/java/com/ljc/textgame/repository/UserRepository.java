@@ -1,6 +1,6 @@
-package repository;
+package com.ljc.textgame.repository;
 
-import domain.User;
+import com.ljc.textgame.domain.User;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package service;
+package com.ljc.textgame.service;
 
 public class ValidationResult {
     private final boolean valid;

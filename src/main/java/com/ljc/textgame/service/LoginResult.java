@@ -1,6 +1,6 @@
-package service;
+package com.ljc.textgame.service;
 
-import domain.User;
+import com.ljc.textgame.domain.User;
 
 public class LoginResult {
     private final boolean success;

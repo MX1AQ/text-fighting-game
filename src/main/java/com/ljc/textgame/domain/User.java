@@ -1,4 +1,4 @@
-package domain;
+package com.ljc.textgame.domain;
 
 import java.util.Random;
 
