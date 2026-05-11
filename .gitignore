@@ -20,7 +20,11 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+# Maven build output
+target/
 
+# Runtime data
+data/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
