@@ -2,6 +2,7 @@
 
 ## 1. 项目概述
 
+
 `TextFightingGameCodex` 是一个基于 Java 控制台的文字游戏项目，当前版本已经完成了账号系统的基础重构，采用了分层设计，为后续接入“文字战斗”“角色成长”“背包道具”“关卡事件”等核心玩法提供了清晰的扩展基础。
 
 当前代码重点解决的是以下问题：
@@ -152,7 +153,7 @@ classDiagram
 ### 7.1 App
 
 文件位置：
-[App.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/App.java:1)
+[App.java](src/main/java/com/ljc/textgame/App.java)
 
 职责：
 
@@ -167,7 +168,7 @@ classDiagram
 ### 7.2 User
 
 文件位置：
-[User.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/domain/User.java:1)
+[User.java](src/main/java/com/ljc/textgame/domain/User.java)
 
 职责：
 
@@ -189,7 +190,7 @@ classDiagram
 ### 7.3 UserRepository
 
 文件位置：
-[UserRepository.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/repository/UserRepository.java:1)
+[UserRepository.java](src/main/java/com/ljc/textgame/repository/UserRepository.java)
 
 职责：
 
@@ -213,7 +214,7 @@ classDiagram
 ### 7.4 UserService
 
 文件位置：
-[UserService.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/service/UserService.java:1)
+[UserService.java](src/main/java/com/ljc/textgame/service/UserService.java)
 
 职责：
 
@@ -229,7 +230,7 @@ classDiagram
 ### 7.5 ValidationResult
 
 文件位置：
-[ValidationResult.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/service/ValidationResult.java:1)
+[ValidationResult.java](src/main/java/com/ljc/textgame/service/ValidationResult.java)
 
 职责：
 
@@ -241,7 +242,7 @@ classDiagram
 ### 7.6 LoginResult
 
 文件位置：
-[LoginResult.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/service/LoginResult.java:1)
+[LoginResult.java](src/main/java/com/ljc/textgame/service/LoginResult.java)
 
 职责：
 
@@ -253,7 +254,7 @@ classDiagram
 ### 7.7 LoginUI
 
 文件位置：
-[LoginUI.java](/C:/Users/LJC/IdeaProjects/TextFightingGameCodex/src/ui/LoginUI.java:1)
+[LoginUI.java](src/main/java/com/ljc/textgame/ui/LoginUI.java)
 
 职责：
 
