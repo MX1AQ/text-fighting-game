@@ -6,7 +6,7 @@ import com.ljc.textgame.repository.UserRepository;
 import java.util.Random;
 
 public class UserService {
-    private static final int MIN_LENGTH = 3;
+    private static final int MIN_LENGTH = 6;
     private static final int MAX_LENGTH = 8;
     private static final int VERIFICATION_CODE_LENGTH = 5;
     private static final String LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -39,7 +39,7 @@ public class UserService {
 
     public ValidationResult validatePassword(String password) {
         if (!isLengthValid(password)) {
-            return ValidationResult.invalid("密码长度必须在 3 到 8 位之间。");
+            return ValidationResult.invalid("密码长度必须在 6 到 8 位之间。");
         }
 
         if (!isAlphaNumeric(password)) {
