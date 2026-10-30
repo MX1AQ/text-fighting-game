@@ -19,7 +19,7 @@ public class UserService {
 
     public ValidationResult validateUsername(String username) {
         if (!isLengthValid(username)) {
-            return ValidationResult.invalid("用户名长度必须在 3 到 8 位之间。");
+            return ValidationResult.invalid("用户名长度必须在 6 到 8 位之间。");
         }
 
         if (!isAlphaNumeric(username)) {
