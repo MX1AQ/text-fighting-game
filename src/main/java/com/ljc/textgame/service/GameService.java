@@ -3,22 +3,26 @@ package com.ljc.textgame.service;
 import com.ljc.textgame.domain.Enemy;
 import com.ljc.textgame.domain.Player;
 import com.ljc.textgame.domain.User;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.ljc.textgame.repository.PlayerRepository;
 
 public class GameService {
-    private final Map<String, Player> players = new HashMap<>();
+    private final PlayerRepository playerRepository;
+
+    public GameService(PlayerRepository playerRepository) {
+        this.playerRepository = playerRepository;
+    }
 
     public Player getOrCreatePlayer(User user) {
-        Player player = players.get(user.getUsername());
-
+        Player player = playerRepository.findByUsername(user.getUsername());
         if (player == null) {
             player = new Player(user.getUsername());
-            players.put(user.getUsername(), player);
+            playerRepository.save(player);
         }
-
         return player;
+    }
+
+    public void savePlayer(Player player) {
+        playerRepository.save(player);
     }
 
     public Enemy createEnemyFor(Player player) {

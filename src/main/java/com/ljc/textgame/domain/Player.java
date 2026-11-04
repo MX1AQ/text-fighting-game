@@ -23,6 +23,20 @@ public class Player {
         this.gold = 0;
     }
 
+    // 从数据库加载角色时用
+    public Player(String username, String name, int level, int exp,
+                  int hp, int maxHp, int attack, int defense, int gold) {
+        this.username = username;
+        this.name = name;
+        this.level = level;
+        this.exp = exp;
+        this.hp = hp;
+        this.maxHp = maxHp;
+        this.attack = attack;
+        this.defense = defense;
+        this.gold = gold;
+    }
+
     public void takeDamage(int damage) {
         hp -= damage;
         if (hp < 0) {

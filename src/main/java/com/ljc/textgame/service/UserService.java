@@ -2,6 +2,7 @@ package com.ljc.textgame.service;
 
 import com.ljc.textgame.domain.User;
 import com.ljc.textgame.repository.UserRepository;
+import com.sun.source.tree.UsesTree;
 
 import java.util.Random;
 

@@ -1,5 +1,6 @@
 package com.ljc.textgame;
 
+import com.ljc.textgame.repository.PlayerRepository;
 import com.ljc.textgame.repository.UserRepository;
 import com.ljc.textgame.service.BattleService;
 import com.ljc.textgame.service.EnemyFactory;
@@ -17,8 +18,9 @@ public class App {
 
         InputHelper inputHelper = new InputHelper();
 
-        GameService gameService = new GameService();
-        BattleService battleService = new BattleService();
+        PlayerRepository playerRepository = new PlayerRepository();
+        GameService gameService = new GameService(playerRepository);
+        BattleService battleService = new BattleService(playerRepository);
         EnemyFactory enemyFactory = new EnemyFactory();
 
         BattleUI battleUI = new BattleUI(inputHelper, battleService, enemyFactory);
